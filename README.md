@@ -17,6 +17,10 @@ Then add:
 
 To your controller. Call `$scope.myDateFn` to get the date as a string.
 
+The example in `index.html` and `app.js`:
+
+![Example](https://raw.githubusercontent.com/Honoo/angular-dateselect/master/example.png)
+
 Parameters (set as attributes):
 * minYear: The oldest allowed year.
 * maxYear: The most recent allowed year.
