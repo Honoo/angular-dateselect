@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="date_app">
+<head>
+	<title>Angular Date Select Example</title>
+
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="dateselect.js"></script>
+</head>
+<body>
+	<!-- Multiple DateSelect examples -->
+	<div ng-controller="FirstController">
+		<h2>First Controller</h2>
+		<date-select set-fn="setDateFn(dateGetFn)">
+		</date-select>
+		<button ng-click="setDate()">Get First Date</button>
+		The date is {{firstDate}}
+		<br><br>
+		<date-select set-fn="setSecondDateFn(dateGetFn)"
+						min-year="2014"
+						max-year="2017">
+		</date-select>
+		<button ng-click="setSecondDate()">Get Second Date</button>
+		The date is {{secondDate}}
+	</div>
+	<div ng-controller="SecondController">
+		<h2>Second Controller</h2>
+		<date-select set-fn="setThirdDateFn(dateGetFn)">
+		</date-select>
+		<button ng-click="setThirdDate()">Get Third Date</button>
+		The date is {{thirdDate}}
+	</div>
+</body>
+</html>
