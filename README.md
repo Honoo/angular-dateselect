@@ -15,9 +15,9 @@ Then add:
   $scope.myDateFn = dirDateFn;
 };`
 
-To your controller. Call `$scope.myDateFn` to get the date as a string.
+To your controller. Call `$scope.myDateFn` to get the date as a string. The output format is `dd/mm/yyyy`. If you wish to change the format, modify it in `$scope.getDate` in the directive.
 
-Parameters (set as attributes):
+Optional parameters (set as attributes):
 * minYear: The oldest allowed year.
 * maxYear: The most recent allowed year.
 
